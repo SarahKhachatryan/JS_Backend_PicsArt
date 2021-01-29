@@ -1,0 +1,37 @@
+function Stack ()
+{
+    const arr = [];
+    return{
+        Push: function(item)
+        {
+            arr[arr.length] = item;
+        },
+        Pop:function()
+        {
+            arr.length--;
+        },
+        Peek:function ()
+        {
+            return  arr[arr.length-1];
+        },
+        Length: ()=>arr.length,
+
+        IsEmpty: ()=>arr.length===0,
+
+        Print:  ()=>arr
+    }
+
+}
+
+const s = Stack();
+s.Push(132);
+s.Push(1212);
+s.Push(2000);
+s.Push(12);
+s.Pop();
+
+console.log(s.Print());
+console.log(s.Length());
+console.log(s.IsEmpty());
+console.log(s.Peek());
+console.log(s.Print());
