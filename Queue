@@ -1,0 +1,34 @@
+function Queue ()
+{
+    const arr = [];
+    return{
+        EnQueue: function(item)
+        {
+            arr[arr.length] = item;
+        },
+        DeQueue: function()
+        {
+            arr.shift();
+        },
+        First: ()=>arr[0],
+        Length: ()=>arr.length,
+
+        IsEmpty: ()=>arr.length===0,
+
+        Print:  ()=>arr
+
+    }
+
+}
+
+const s = Queue();
+s.EnQueue(132);
+s.EnQueue(1212);
+s.EnQueue(2000);
+s.EnQueue(12);
+s.DeQueue();
+
+console.log(s.Print());
+console.log(s.Length());
+console.log(s.IsEmpty());
+console.log(s.First());
