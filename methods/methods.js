@@ -69,6 +69,7 @@ function getUserByName(name) {
     }
 }
 
+
 /**Gives user which name contains given substring.*/
 function getUserBySubstring(subStr) {
     const arr = readUsers();

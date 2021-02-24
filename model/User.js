@@ -9,6 +9,7 @@ function User(name, surname, mail) {
     console.log(this.id);
 }
 
+
 module.exports = User;
 
 
