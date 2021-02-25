@@ -17,10 +17,10 @@ function deleteUserById(id) {
     let arr = [];
     for (let i = 0; i < usersArray.length; i++) {
         if (usersArray[i].id === id) {
-            arr = usersArray.splice(i, 1);
+            usersArray.splice(i, 1);
         }
     }
-    writeUsers(arr);
+    writeUsers(usersArray);
 
 }
 
